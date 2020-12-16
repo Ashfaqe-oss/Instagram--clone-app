@@ -1,0 +1,61 @@
+.videoCard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+}
+
+.videoCard__player {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.videoCard__bottom {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    margin-bottom: 10px;
+}
+
+.videoCard__bottomDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.__bottomDetailsUser {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    color: rgb(99, 99, 99);
+}
+
+.__bottomDetailsUser>h5 {
+    font-weight: 800;
+    margin-left: 7px;
+}
+
+.__bottomDetailsCaption {
+    display: flex;
+    position: relative;
+    align-items: center;
+    color: rgb(117, 117, 117);
+}
+
+.__bottomDetailsCaption>.MuiIconButton-root {
+    width: 50px;
+    padding: 7px;
+}
+
+.__bottomDetailsCaption>p {
+    font-size: 11px;
+}
+
+.__bottomDetailsCaption>.ticker {
+    width: 130px;
+    height: fit-content;
+    margin-left: 10px;
+    font-size: 13px;
+}

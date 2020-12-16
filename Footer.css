@@ -1,0 +1,13 @@
+.footer {
+    border-top: 10px solid rgb(75, 74, 74);
+    border-bottom: 10px solid rgb(75, 74, 74);
+    padding: 10px;
+    background-color: #cacaca;
+    text-align: center;
+    color: black;
+}
+
+.footer>p {
+    padding: 10px;
+    font-size: 14px;
+}

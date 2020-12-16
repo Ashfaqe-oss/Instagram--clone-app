@@ -1,0 +1,77 @@
+html {
+    scroll-snap-type: y proximity;
+}
+
+.reels {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(27, 27, 27);
+    height: 100vh;
+}
+
+.reels__header {
+    display: flex;
+}
+
+.reels__header>.MuiButton-root {
+    color: #fff;
+    border: none !important;
+}
+
+.reels__headerCenter {
+    display: flex;
+    justify-content: flex-start;
+    height: 42px !important;
+    flex: 1;
+    align-items: center;
+    margin: 10px;
+    color: #fff;
+}
+
+.reels__headerCenterButton {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 5%;
+}
+
+.reels__headerCenterButton>.MuiButton-root {
+    color: #fff;
+    border: none !important;
+    font-size: 30px !important;
+}
+
+.reels__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.reels__body>.MuiButton-root {
+    border: none !important;
+}
+
+.reels__videos {
+    position: relative;
+    height: 80vh;
+    margin: 3%;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 15px;
+    min-width: 350px;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.reels__videos::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* hiding scrollbar for firefox, edge, IE */
+
+.reels__videos {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
