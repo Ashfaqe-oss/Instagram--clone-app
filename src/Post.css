@@ -1,0 +1,82 @@
+.post {
+    max-width: 500px;
+    margin: 5% 5% 7%;
+    min-width: 300px;
+    background-color: #1f1f1f;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.post__image {
+    width: 100%;
+    max-height: 325px;
+    height: 100%;
+    object-fit: contain;
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+}
+
+.post>h5 {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 11px;
+}
+
+.post__text {
+    font-weight: 200;
+    margin: 3.5% auto 4.5%;
+}
+
+.post__header {
+    display: flex;
+    align-items: centre;
+    margin-top: 1.9%;
+    margin-bottom: 1.5%;
+}
+
+.post__avatar {
+    margin-right: 0.9%;
+    margin-left: 3.7%;
+}
+
+.post__headerusername {
+    padding-top: 1.5%;
+}
+
+.post__commentbox {
+    display: flex;
+    border-top: 1px solid lightgray;
+}
+
+.post__comments {
+    padding: 3%;
+}
+
+.post__input {
+    flex: 1;
+    padding: 2%;
+    border: none;
+    padding: 1% auto 1%;
+}
+
+.post__button {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(75, 74, 74);
+    outline: none;
+    border-radius: 0 0 10px 0;
+    transition: 0.1s all;
+    font-size: 16px;
+    font-weight: 700;
+    width: 70px;
+}
+
+.post__button:hover {
+    background-color: #cacaca;
+}
+
+.MuiButton-root {
+    border: 1px solid white !important;
+    cursor: pointer !important;
+}

@@ -1,38 +1,118 @@
+* {
+    margin: 0;
+}
+
 .App {
-  text-align: center;
+    text-align: center;
+    justify-content: centre;
+    color: white;
+    background-color: #1d1d1d;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App>h3 {
+    margin: 23px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__header1 {
+    padding: 0.5% 2%;
+    background-color: rgb(219, 21, 31);
+    border-bottom: 1px solid lightgrey;
+    object-fit: contain;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: 0.3s all;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.notShow {
+    background-color: rgba(204, 204, 204, 0.5);
+    border: none;
 }
 
-.App-link {
-  color: #61dafb;
+.app__headerImage {
+    width: 115px;
+    display: flex;
+    object-fit: contain;
+    border-radius: 17% 35%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.signUp__headerImage {
+    object-fit: contain;
+    width: 30%;
+}
+
+#signUp {
+    width: 300px;
+}
+
+.signIn__up {
+    border: 3px solid #cacaca !important;
+    border-radius: 9px !important;
+    margin-left: 15px !important;
+}
+
+.app__signUpForm {
+    display: flex;
+    flex-direction: column;
+    width: 300px !important;
+}
+
+.app__signUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.app__posts {
+    display: block;
+}
+
+.app__postsLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logout:hover {
+    background-color: white;
+    color: black;
+}
+
+.app__loginContainer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.app__loginContainer>.MuiButton-root {
+    border-radius: 9px !important;
+    border: 3px solid #cacaca !important;
+    color: white!important;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.app__loginContainerIcons {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin-right: 5px;
+    padding-top: 3px;
+    font-size: 25px;
+}
+
+.app__loginContainerIcons>.MuiButton-root {
+    color: white !important;
+    border: none !important;
+    height: 42px !important;
+}
+
+@media(max-width: 500px) {
+    .app__headerImage {
+        width: 100px;
+    }
 }
