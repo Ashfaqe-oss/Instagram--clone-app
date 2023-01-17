@@ -1,0 +1,2 @@
+# Instagram--clone-app
+A full stack web app being front-end heavy with React. Firebase for the backend. Uses firebase storage and cloud firestore to fetch your data in realtime.  features include : 1.) User Authentication with email and password 2.) Authenticated users ability to upload posts and captions along with comments by other users. 3.) Like other posts with sign in. 4.) New Reels videos section - again allowing authenticated users to upload , caption and like videos.
